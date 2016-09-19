@@ -6628,7 +6628,7 @@ a.text-danger:focus, a.text-danger:hover {
 .index-banner {
   padding: 90px 0;
   background-image: url("../../assets/img/iasa-banner.jpg");
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../../../assets/img/iasa-banner.jpg ");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../../assets/img/iasa-banner.jpg ");
   background-position: 50% 60%;
 }
 
@@ -6670,25 +6670,25 @@ a.text-danger:focus, a.text-danger:hover {
 
 .title.title-commercial {
   background-image: url("../../assets/img/iasa-7.jpg");
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../../../assets/img/iasa-7.jpg ");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../../assets/img/iasa-7.jpg ");
   background-position: 50% 50%;
 }
 
 .title.title-military {
   background-image: url("../../assets/img/iasa-6.jpg");
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../../../assets/img/iasa-6.jpg ");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../../assets/img/iasa-6.jpg ");
   background-position: 50% 50%;
 }
 
 .title.title-contact {
   background-image: url("../../assets/img/iasa-5.jpg");
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../../../assets/img/iasa-5.jpg ");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../../assets/img/iasa-5.jpg ");
   background-position: 50% 50%;
 }
 
 .title.title-about {
   background-image: url("../../assets/img/iasa-4.jpg");
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../../../assets/img/iasa-4.jpg ");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../../assets/img/iasa-4.jpg ");
   background-position: 50% 15%;
 }
 
@@ -6698,7 +6698,7 @@ a.text-danger:focus, a.text-danger:hover {
 
 .footer-cta {
   background-image: url("../../assets/img/iasa-1.jpg");
-  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../../../assets/img/iasa-1.jpg ");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../../assets/img/iasa-1.jpg ");
   background-position: 50% 50%;
   background-size: cover;
   color: white;
@@ -6751,8 +6751,8 @@ a.text-danger:focus, a.text-danger:hover {
 }
 
 .military-support {
-  background-image: url("../../../assets/img/iasa-12.jpg");
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../../../assets/img/iasa-12.jpg ");
+  background-image: url("../../assets/img/iasa-12.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../../assets/img/iasa-12.jpg ");
   background-position: 50% 50%;
   background-size: cover;
 }
@@ -6762,8 +6762,8 @@ a.text-danger:focus, a.text-danger:hover {
 }
 
 .content-bg.commercial {
-  background-image: url("../../../assets/img/iasa-4.jpg");
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../../../assets/img/iasa-4.jpg ");
+  background-image: url("../../assets/img/iasa-4.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../../assets/img/iasa-4.jpg ");
   background-position: 50% 10%;
   background-size: cover;
 }
