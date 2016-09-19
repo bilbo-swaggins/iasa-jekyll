@@ -8,22 +8,22 @@
     <div class="collapse navbar-toggleable-sm" id="exCollapsingNavbar2">
       <ul class="nav navbar-nav pull-md-right main-nav">
         <li class="nav-item {% if page.url == '/' %}active{% endif %}">
-          <a class="nav-link" href="{{ site.staticurl }}/">Home <span class="sr-only">(current)</span></a>
+          <a class="nav-link" href="{{ site.baseurl }}/">Home <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item {% if page.url == '/rfq/' %}active{% endif %}">
-          <a class="nav-link" href="/rfq">RFQ Form</a>
+          <a class="nav-link" href="{{ site.baseurl }}/rfq">RFQ Form</a>
         </li>
         <li class="nav-item {% if page.url == '/commercial/' %}active{% endif %}">
-          <a class="nav-link" href="/commercial">Commercial</a>
+          <a class="nav-link" href="{{ site.baseurl }}/commercial">Commercial</a>
         </li>
         <li class="nav-item {% if page.url == '/military/' %}active{% endif %}">
-          <a class="nav-link" href="/military">Military</a>
+          <a class="nav-link" href="{{ site.baseurl }}/military">Military</a>
         </li>
         <li class="nav-item {% if page.url == '/about/' %}active{% endif %}">
-          <a class="nav-link" href="/about">About</a>
+          <a class="nav-link" href="{{ site.baseurl }}/about">About</a>
         </li>
         <li class="nav-item">
-          <a class="btn btn-outline-primary" href="/contact" role="button">Contact</a>
+          <a class="btn btn-outline-primary" href="{{ site.baseurl }}/contact" role="button">Contact</a>
         </li>
       </ul>
     </div>
