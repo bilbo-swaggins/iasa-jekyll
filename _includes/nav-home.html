@@ -1,0 +1,32 @@
+<nav class="navbar navbar-light bg-faded">
+  <div class="container">
+    <a class="navbar-brand" href="{{ site.staticurl }}/"><img alt="Brand" src="{{ site.baseurl }}/assets/img/logo.png"></a>
+
+    <button class="navbar-toggler hidden-md-up" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar2" aria-controls="exCollapsingNavbar2" aria-expanded="false" aria-label="Toggle navigation">
+      &#9776;
+    </button>
+    <div class="collapse navbar-toggleable-sm" id="exCollapsingNavbar2">
+      <ul class="nav navbar-nav pull-md-right main-nav">
+        <li class="nav-item {% if page.url == '/' %}active{% endif %}">
+          <a class="nav-link" href="{{ site.staticurl }}/">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item {% if page.url == '/rfq/' %}active{% endif %}">
+          <a class="nav-link" href="/rfq">RFQ Form</a>
+        </li>
+        <li class="nav-item {% if page.url == '/commercial/' %}active{% endif %}">
+          <a class="nav-link" href="/commercial">Commercial</a>
+        </li>
+        <li class="nav-item {% if page.url == '/military/' %}active{% endif %}">
+          <a class="nav-link" href="/military">Military</a>
+        </li>
+        <li class="nav-item {% if page.url == '/about/' %}active{% endif %}">
+          <a class="nav-link" href="/about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="btn btn-outline-primary" href="/contact" role="button">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+</nav>

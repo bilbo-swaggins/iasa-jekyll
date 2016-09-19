@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {% include header.html %}
+  </head>
+  <body>
+
+    {% include nav-home.html %}
+
+    <div class="title title-contact">
+      <div class="container">
+        <h2>{{ page.title }}</h2>
+      </div>
+    </div>
+    <section class="iasa-form">
+      <div class="container p-t-3 p-b-3">
+        <div class="row contact-wrap">
+          <div class="col-md-8 col-xl-10">
+              {{ content }}
+          </div>
+          <div class="col-md-4 col-xl-2 iasa-contact-info">
+            <h3>IASA Group LLC</h3>
+            <p>1905 Production Road <br>
+              Fort Wayne <br>
+              Indiana, 46808 USA
+            </p>
+            <p><strong>Tel:</strong> (260)-481-1322</p>
+            <p><strong>Fax:</strong> (260)-575-4700</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    {% include footer.html %}
+  </body>
+</html>
