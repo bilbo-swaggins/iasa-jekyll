@@ -6592,7 +6592,7 @@ a.text-danger:focus, a.text-danger:hover {
     content: '';
     width: 24px;
     height: 16px;
-    background-image: url("../../../assets/img/icons/icon-jet.png");
+    background-image: url("../../assets/img/icons/icon-jet.png");
     background-size: contain;
     position: absolute;
     top: 0;
