@@ -4,11 +4,19 @@ title: Request For Quote
 description: IASA Group Aircraft Parts Supply Request for Quote Form
 class: rfq
 ---
-    <form class="rfq-form">
+    <blockquote class="blockquote hidden-xs-up">
+      <div class="row">
+        <div class="col-xs-12">
+          <h4>Oh No!</h4>
+          <p>It Looks like you may have hit some turbulance. Please verify that all information in the form is correct and submit again. Thanks</p>
+        </div>
+      </div>
+    </blockquote>
+    <form class="rfq-form" id="rfq-form" action="https://formspree.io/quotes@iasagrp.com" method="POST" data-parsley-validate="">
       <div class="form-group row">
         <label for="name" class="col-sm-2 col-form-label">Name</label>
         <div class="col-sm-10">
-          <input class="form-control" type="text" placeholder="name" id="name">
+          <input class="form-control" type="text" placeholder="name" id="name" required="">
         </div>
       </div>
       <div class="form-group row">
@@ -20,12 +28,12 @@ class: rfq
       <div class="form-group row">
         <label for="company-street" class="col-sm-2 col-form-label">Company Address</label>
         <div class="col-sm-10 address-col">
-            <input class="form-control" type="text" placeholder="Address" id="company-street">
+            <input class="form-control" type="text" placeholder="Address" id="company-street" required="">
 
               <input class="form-control" type="text" placeholder="Address 2" id="company-street-2">
               <div class="row">
                 <div class="col-sm-6">
-                  <input class="form-control" type="text" placeholder="City" id="city">
+                  <input class="form-control" type="text" placeholder="City" id="city" required="">
                 </div>
                 <div class="col-sm-6">
                   <select class="form-control" id="state" name="state">
@@ -85,20 +93,30 @@ class: rfq
                   </select>
                 </div>
               </div>
+              <div class="form-group row">
+                <div class="col-xs-6">
+                  <input class="form-control" type="text" placeholder="Zip" id="zip">
+                </div>
+                <div class="col-xs-6">
+                  <input class="form-control" type="text" placeholder="Country" id="country" required="">
+                </div>
+              </div>
+
 
         </div>
+
       </div>
 
       <div class="form-group row">
         <label for="phone" class="col-sm-2 col-form-label">Phone Number</label>
         <div class="col-sm-10">
-          <input class="form-control" type="tel" id="phone" placeholder="Phone Number">
+          <input class="form-control" type="tel" id="phone" placeholder="Phone Number" required="" data-parsley-type="digits" data-parsley-minlength="10" data-parsley-error-message="Required - Please Enter a valid phone number">
         </div>
       </div>
       <div class="form-group row">
         <label for="email" class="col-sm-2 col-form-label">Email</label>
         <div class="col-sm-10">
-          <input class="form-control" type="email" id="email" placeholder="Email">
+          <input class="form-control" type="email" id="email" placeholder="Email" required="" data-parsley-trigger="change" data-parsley-error-message="Required - Please Enter a Valid Email">
         </div>
       </div>
       <div class="form-group row">
@@ -119,5 +137,16 @@ class: rfq
           <textarea class="form-control" id="message" rows="4" placeholder="Include part number, NSN and quantity"></textarea>
         </div>
       </div>
+      <div class="hidden-xs-up">
+          <input class="form-control" type="text" name="thank-you" data-parsley-validate-if-empty="">
+      </div>
       <button type="submit" class="btn btn-primary w-100">Request Quote</button>
     </form>
+    <script type="text/javascript">
+      $(function() {
+        $('#rfq-form').parsley().on('field:validated', function() {
+          var ok = $('.parsley-error').length === 0;
+          $('.blockquote').toggleClass('hidden-xs-up', ok);
+        })
+      });
+    </script>

@@ -1,36 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    {% include header.html %}
-  </head>
-  <body>
 
-    {% include nav-home.html %}
+<head>
+  {% include header.html %}
+</head>
 
-    <div class="title title-contact">
-      <div class="container">
-        <h2>{{ page.title }}</h2>
-      </div>
+<body>
+
+  {% include nav-home.html %}
+
+  <div class="title title-contact">
+    <div class="container">
+      <h2>{{ page.title }}</h2>
     </div>
-    <section class="iasa-form">
-      <div class="container p-t-3 p-b-3">
-        <div class="row contact-wrap">
-          <div class="col-md-8 col-xl-10">
-              {{ content }}
-          </div>
-          <div class="col-md-4 col-xl-2 iasa-contact-info">
-            <h3>IASA Group LLC</h3>
-            <p>1905 Production Road <br>
-              Fort Wayne <br>
-              Indiana, 46808 USA
-            </p>
-            <p><strong>Tel:</strong> (260)-481-1322</p>
-            <p><strong>Fax:</strong> (260)-575-4700</p>
-          </div>
+  </div>
+  <section class="iasa-form">
+    <div class="container p-t-3 p-b-3">
+      <div class="row contact-wrap">
+        <div class="col-md-8 col-xl-8">
+          {{ content }}
+        </div>
+        <div class="col-md-4 col-xl-4 iasa-contact-info">
+          <h3>IASA Group LLC</h3>
+          <p>1905 Production Road <br> Fort Wayne <br> Indiana, 46808 USA
+          </p>
+          <p><strong>Tel:</strong> <a href="tel:260-484-1322">260-484-1322</a></p>
+          <p><strong>Fax:</strong> 260-572-4700</p>
+          <h6>Cage Code</h6>
+          <h2>7BM02</h2>
+          <h6>DUNS #:</h6>
+          <h2>96-754-5849</h2>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    {% include footer.html %}
-  </body>
+  {% include footer.html %}
+</body>
+
 </html>
