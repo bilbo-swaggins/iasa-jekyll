@@ -6607,6 +6607,12 @@ a.text-danger:focus, a.text-danger:hover {
   text-align: center;
 }
 
+.iasa-footer p {
+  font-size: 12px;
+  font-style: italic;
+  margin: 20px 10px;
+}
+
 @media screen and (max-width: 768px) {
   .iasa-footer {
     text-align: center;
