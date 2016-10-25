@@ -1,5 +1,6 @@
 title : IASA Website
 author : Eric Willis
 baseurl : https://bilbo-swaggins.github.io/iasa-jekyll
+# baseurl : https://www.iasagrp.com
 markdown: rdiscount
 markdown: kramdown
