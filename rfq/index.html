@@ -16,24 +16,24 @@ class: rfq
       <div class="form-group row">
         <label for="name" class="col-sm-2 col-form-label">Name</label>
         <div class="col-sm-10">
-          <input class="form-control" type="text" placeholder="name" id="name" required="">
+          <input class="form-control" type="text" placeholder="name" id="name" required="" name="Name">
         </div>
       </div>
       <div class="form-group row">
         <label for="company-name" class="col-sm-2 col-form-label">Company Name</label>
         <div class="col-sm-10">
-          <input class="form-control" type="text" placeholder="Company Name" id="company-name" required="">
+          <input class="form-control" type="text" placeholder="Company Name" id="company-name" required="" name="CompanyName">
         </div>
       </div>
       <div class="form-group row">
         <label for="company-street" class="col-sm-2 col-form-label">Company Address</label>
         <div class="col-sm-10 address-col">
-            <input class="form-control" type="text" placeholder="Address" id="company-street" required="">
+            <input class="form-control" type="text" placeholder="Address" id="company-street" required="" name="Street">
 
-              <input class="form-control" type="text" placeholder="Address 2" id="company-street-2">
+              <input class="form-control" type="text" placeholder="Address 2" id="company-street-2" name="Street2">
               <div class="row">
                 <div class="col-sm-6">
-                  <input class="form-control" type="text" placeholder="City" id="city" required="">
+                  <input class="form-control" type="text" placeholder="City" id="city" required="" name="City">
                 </div>
                 <div class="col-sm-6">
                   <select class="form-control" id="state" name="state">
@@ -95,10 +95,10 @@ class: rfq
               </div>
               <div class="form-group row">
                 <div class="col-xs-6">
-                  <input class="form-control" type="text" placeholder="Zip" id="zip">
+                  <input class="form-control" type="text" placeholder="Zip" id="zip" name="Zip">
                 </div>
                 <div class="col-xs-6">
-                  <input class="form-control" type="text" placeholder="Country" id="country" required="">
+                  <input class="form-control" type="text" placeholder="Country" id="country" required="" name="Country">
                 </div>
               </div>
 
@@ -110,35 +110,35 @@ class: rfq
       <div class="form-group row">
         <label for="phone" class="col-sm-2 col-form-label">Phone Number</label>
         <div class="col-sm-10">
-          <input class="form-control" type="tel" id="phone" placeholder="Phone Number" required="" data-parsley-type="digits" data-parsley-minlength="10" data-parsley-error-message="Required - Please Enter a valid phone number">
+          <input class="form-control" type="tel" id="phone" placeholder="Phone Number" required="" data-parsley-type="digits" data-parsley-minlength="10" data-parsley-error-message="Required - Please Enter a valid phone number" name="PhoneNumber">
         </div>
       </div>
       <div class="form-group row">
         <label for="email" class="col-sm-2 col-form-label">Email</label>
         <div class="col-sm-10">
-          <input class="form-control" type="email" id="email" placeholder="Email" required="" data-parsley-trigger="change" data-parsley-error-message="Required - Please Enter a Valid Email">
+          <input class="form-control" type="email" id="email" placeholder="Email" required="" data-parsley-trigger="change" data-parsley-error-message="Required - Please Enter a Valid Email" name="Email">
         </div>
       </div>
       <div class="form-group row">
         <label for="end-user" class="col-sm-2 col-form-label">End User</label>
         <div class="col-sm-10">
-          <input class="form-control" type="text" placeholder="End User" id="end-user" required="">
+          <input class="form-control" type="text" placeholder="End User" id="end-user" required="" name="EndUser">
         </div>
       </div>
       <div class="form-group row">
         <label for="aircraft-type" class="col-sm-2 col-form-label">Aircraft Type</label>
         <div class="col-sm-10">
-          <input class="form-control" type="text" placeholder="Aircraft Type" id="aircraft-type" required="">
+          <input class="form-control" type="text" placeholder="Aircraft Type" id="aircraft-type" required="" name="AircraftType">
         </div>
       </div>
       <div class="form-group row">
         <label for="message" class="col-sm-2 col-form-label">Message</label>
         <div class="col-sm-10">
-          <textarea class="form-control" id="message" rows="4" placeholder="Include part number, NSN and quantity" required=""></textarea>
+          <textarea class="form-control" id="message" rows="4" placeholder="Include part number, NSN and quantity" required="" name="Message"></textarea>
         </div>
       </div>
       <div class="hidden-xs-up">
-          <input class="form-control" type="text" name="thank-you" data-parsley-validate-if-empty="">
+          <input class="form-control" type="text" data-parsley-validate-if-empty="">
       </div>
       <button type="submit" class="btn btn-primary w-100">Request Quote</button>
     </form>
